@@ -33,11 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         feedbackDiv.style.display = 'block';
         if (isValid) {
-            feedBack.textContent = 'Registration Successful!';
-            feedBack.style.color = "#28a745";
+            feedbackDiv.textContent = 'Registration Successful!';
+            feedbackDiv.style.color = "#28a745";
         } else {
-            feedBack.innerHTML = messages.join('<br>');
-            feedBack.style.color = '#dc3545';
+            feedbackDiv.innerHTML = messages.join('<br>');
+            feedbackDiv.style.color = '#dc3545';
         }
 
         
