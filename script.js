@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('registration-form');
-    const feedBack = document.getElementById('form-feedback');
+    const feedbackDiv = document.getElementById('form-feedback');
 
 
     form.addEventListener('submit', function(e) {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
 
-        feedBack.style.display = 'block';
+        feedbackDiv.style.display = 'block';
         if (isValid) {
             feedBack.textContent = 'Registration Successful!';
             feedBack.style.color = "#28a745";
